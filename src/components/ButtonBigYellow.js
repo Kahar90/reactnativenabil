@@ -1,17 +1,29 @@
 import {Text, View, StyleSheet, Button, TouchableOpacity} from 'react-native';
 import React, {Component} from 'react';
 
-export default class ButtonBigYellow extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.button}>
-          <Text style={styles.buttonText}>{this.props.text}</Text>
-        </View>
+function ButtonBigYellow(props) {
+  return (
+    <View style={styles.container}>
+      <View style={styles.button}>
+        <Text style={styles.buttonText}>{props.text}</Text>
       </View>
-    );
-  }
+    </View>
+  );
 }
+
+export default ButtonBigYellow;
+
+// export default class ButtonBigYellow extends Component {
+//   render() {
+//     return (
+//       <View style={styles.container}>
+//         <View style={styles.button}>
+//           <Text style={styles.buttonText}>{this.props.text}</Text>
+//         </View>
+//       </View>
+//     );
+//   }
+// }
 
 const styles = StyleSheet.create({
   button: {

@@ -3,25 +3,28 @@ import React, {Component} from 'react';
 import Football from '../svg/006-football.svg';
 import Camera from '../svg/036-camera.svg';
 
-
-export default class TabChoose extends Component {
-  render() {
-    return (
-      <View style={styles.box}>
-        <View style={styles.card}>
-          <View style={styles.cardmenuselected}>
-            <Football width={30} height={30} fill="#000"></Football>
-            <Text style={styles.cardtext}>YOUR EVENTS</Text>
-          </View>
-          <View style={styles.cardmenuunselected}>
-            {/* <Text style={styles.cardtext}></Text> */}
-            <Camera width={30} height={30} fill="#000" style={{fill: "#828182"}}></Camera>
-          </View>
+function TabChoose(props) {
+  return (
+    <View style={styles.box}>
+      <View style={styles.card}>
+        <View style={styles.cardmenuselected}>
+          <Football width={30} height={30} fill="#000"></Football>
+          <Text style={styles.cardtext}>YOUR EVENTS</Text>
+        </View>
+        <View style={styles.cardmenuunselected}>
+          {/* <Text style={styles.cardtext}></Text> */}
+          <Camera
+            width={30}
+            height={30}
+            fill="#000"
+            style={{fill: '#828182'}}></Camera>
         </View>
       </View>
-    );
-  }
+    </View>
+  );
 }
+
+export default TabChoose;
 
 const styles = StyleSheet.create({
   box: {

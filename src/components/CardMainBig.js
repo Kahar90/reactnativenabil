@@ -6,73 +6,73 @@ import QA from '../svg/025-qa.svg';
 import Info from '../svg/045-info.svg';
 import Time from '../svg/001-calendar.svg';
 
-export default class CardMainBig extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.box}>
-          {/* Match Text */}
-          <View style={styles.matchmain}>
-            <Football width={40} height={40} fill="#2093FF"></Football>
-            <View>
-              <Text style={styles.texth1}>Sveila vs Inter Milan</Text>
-              <Text style={styles.texth2}>at RheinEnergieStadion, Cologne</Text>
+function CardMainBig(props) {
+  return (
+    <View style={styles.container}>
+      <View style={styles.box}>
+        {/* Match Text */}
+        <View style={styles.matchmain}>
+          <Football width={40} height={40} fill="#2093FF"></Football>
+          <View>
+            <Text style={styles.texth1}>Sveila vs Inter Milan</Text>
+            <Text style={styles.texth2}>at RheinEnergieStadion, Cologne</Text>
+          </View>
+        </View>
+        <View style={styles.spacer}></View>
+
+        {/* Image */}
+
+        <Text style={styles.textdate}>Friday, 21 August 2020 at 8:00 PM</Text>
+        <View style={styles.image}>
+          {/* image goes here */}
+          <View style={styles.team}>
+            <View style={styles.teammenu}>
+              <Text>Sveila</Text>
             </View>
           </View>
-          <View style={styles.spacer}></View>
-
-          {/* Image */}
-
-          <Text style={styles.textdate}>Friday, 21 August 2020 at 8:00 PM</Text>
-          <View style={styles.image}>
-            {/* image goes here */}
-            <View style={styles.team}>
-              <View style={styles.teammenu}>
-                <Text>Sveila</Text>
-              </View>
-            </View>
-            <View style={styles.team}>
-              <View style={styles.teammenu}>
-                <Text>Inter Milan</Text>
-              </View>
-            </View>
-          </View>
-
-          {/* Status */}
-
-          <View style={styles.status}>
-            <Text style={styles.textstatus}>Ready to work</Text>
-
-            <Masks width={35} height={35} fill="#fff"></Masks>
-          </View>
-          <View style={styles.BSQMenu}>
-            <View style={{backgroundColor: '#fff', alignItems: 'center'}}>
-              <Text style={styles.bsqtext}>Briefing</Text>
-              <View style={styles.bsqcard}>
-                <Info width={35} height={35} fill="#000"></Info>
-              </View>
-            </View>
-
-            <View style={{backgroundColor: '#fff', alignItems: 'center'}}>
-              <Text style={styles.bsqtext}>Schedule</Text>
-              <View style={styles.bsqcard}>
-                <Time width={35} height={35} fill="#000"></Time>
-              </View>
-            </View>
-
-            <View style={{backgroundColor: '#fff', alignItems: 'center'}}>
-              <Text style={styles.bsqtext}>Quiz</Text>
-              <View style={styles.bsqcard}>
-                <QA width={35} height={35} fill="#000"></QA>
-              </View>
+          <View style={styles.team}>
+            <View style={styles.teammenu}>
+              <Text>Inter Milan</Text>
             </View>
           </View>
         </View>
-        {/* Briefing schedule quiz */}
+
+        {/* Status */}
+
+        <View style={styles.status}>
+          <Text style={styles.textstatus}>Ready to work</Text>
+
+          <Masks width={35} height={35} fill="#fff"></Masks>
+        </View>
+        <View style={styles.BSQMenu}>
+          <View style={{backgroundColor: '#fff', alignItems: 'center'}}>
+            <Text style={styles.bsqtext}>Briefing</Text>
+            <View style={styles.bsqcard}>
+              <Info width={35} height={35} fill="#000"></Info>
+            </View>
+          </View>
+
+          <View style={{backgroundColor: '#fff', alignItems: 'center'}}>
+            <Text style={styles.bsqtext}>Schedule</Text>
+            <View style={styles.bsqcard}>
+              <Time width={35} height={35} fill="#000"></Time>
+            </View>
+          </View>
+
+          <View style={{backgroundColor: '#fff', alignItems: 'center'}}>
+            <Text style={styles.bsqtext}>Quiz</Text>
+            <View style={styles.bsqcard}>
+              <QA width={35} height={35} fill="#000"></QA>
+            </View>
+          </View>
+        </View>
       </View>
-    );
-  }
+      {/* Briefing schedule quiz */}
+    </View>
+  );
 }
+
+export default CardMainBig;
 
 const styles = StyleSheet.create({
   container: {

@@ -1,45 +1,51 @@
-import {Text, View, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
+import {
+  Text,
+  View,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import React, {Component} from 'react';
 import ButtonBigYellow from '../src/components/ButtonBigYellow';
 import TextField from '../src/components/TextField';
 import LogoThin from '../src/svg/react-logo-svgrepo-com.svg';
 
-
-export default class LoginScreen extends Component {
-  componentDidMount() {
-    console.log('LoginScreen componentDidMount asdasd');
-  }
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.logo}>
-          <LogoThin width={100} height={100} fill="#C6C5C5"></LogoThin>
-        </View>
-        <TextField text="Email"></TextField>
-        <TextField text="Password"></TextField>
-        {/* <ButtonBigYellow
-          navigation={this.props.navigation}
-          text={'Sign In With Email'}></ButtonBigYellow> */}
-          <TouchableOpacity style={styles.button} onPress={()=>{this.props.navigation.navigate('Home')}}>
-          <ButtonBigYellow
-          navigation={this.props.navigation}
-          text={'Sign In With Email'}></ButtonBigYellow>
-          </TouchableOpacity>
-        <Text
-          style={styles.textgrey}
-          onPress={() => {
-            this.props.navigation.navigate('ForgotPassword');
-          }}>
-          I forgot my password
-        </Text>
-        <Text style={styles.textyellow}>
-          Are you an Event Manager?{' '}
-          <Text style={styles.textgrey}>Click here.</Text>
-        </Text>
+function LoginScreen(props) {
+  return (
+    <View style={styles.container}>
+      <View style={styles.logo}>
+        <LogoThin width={100} height={100} fill="#C6C5C5"></LogoThin>
       </View>
-    );
-  }
+      <TextField text="Email"></TextField>
+      <TextField text="Password"></TextField>
+      {/* <ButtonBigYellow
+        navigation={props.navigation}
+        text={'Sign In With Email'}></ButtonBigYellow> */}
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => {
+          props.navigation.navigate('Home');
+        }}>
+        <ButtonBigYellow
+          navigation={props.navigation}
+          text={'Sign In With Email'}></ButtonBigYellow>
+      </TouchableOpacity>
+      <Text
+        style={styles.textgrey}
+        onPress={() => {
+          props.navigation.navigate('ForgotPassword');
+        }}>
+        I forgot my password
+      </Text>
+      <Text style={styles.textyellow}>
+        Are you an Event Manager?{' '}
+        <Text style={styles.textgrey}>Click here.</Text>
+      </Text>
+    </View>
+  );
 }
+
+export default LoginScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -68,7 +74,7 @@ const styles = StyleSheet.create({
     // width: '100%',
     // width: 200,
     // height: 50,
-    
+
     width: '92%',
     height: '12%',
     alignItems: 'center',
@@ -77,7 +83,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 10,
   },
-
 });
 
 // const navigateToHome = (navigation) => {

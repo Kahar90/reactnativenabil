@@ -4,36 +4,34 @@ import Football from '../svg/006-football.svg';
 import Arrow from '../svg/056-forward.svg';
 import Time from '../svg/058-null.svg';
 
-export default class CardEvents extends Component {
-  render() {
-    return (
-      <View style={styles.card}>
-        <View style={styles.toppart}>
-          <View style={{width: '65%'}}>
-            <Text style={styles.texth2}>Friday, 21 August 2020 at 8:00 PM</Text>
-          </View>
-          <View style={styles.time}>
-            <Time width={25} height={25} fill="#fff"></Time>
-          </View>
+function CardEvents(props) {
+  return (
+    <View style={styles.card}>
+      <View style={styles.toppart}>
+        <View style={{width: '65%'}}>
+          <Text style={styles.texth2}>Friday, 21 August 2020 at 8:00 PM</Text>
         </View>
-        <View style={styles.infopart}>
-          <View style={styles.matchmain}>
-            <Football width={30} height={30} fill="#2093FF"></Football>
-            <View>
-              <View>
-                <Text style={styles.texth1}>Sveila vs Inter Milan</Text>
-                <Text style={styles.texth2}>
-                  at RheinEnergieStadion, Cologne
-                </Text>
-              </View>
-            </View>
-          </View>
-          <Arrow width={25} height={25} fill="#A1A1A1"></Arrow>
+        <View style={styles.time}>
+          <Time width={25} height={25} fill="#fff"></Time>
         </View>
       </View>
-    );
-  }
+      <View style={styles.infopart}>
+        <View style={styles.matchmain}>
+          <Football width={30} height={30} fill="#2093FF"></Football>
+          <View>
+            <View>
+              <Text style={styles.texth1}>Sveila vs Inter Milan</Text>
+              <Text style={styles.texth2}>at RheinEnergieStadion, Cologne</Text>
+            </View>
+          </View>
+        </View>
+        <Arrow width={25} height={25} fill="#A1A1A1"></Arrow>
+      </View>
+    </View>
+  );
 }
+
+export default CardEvents;
 
 const styles = StyleSheet.create({
   card: {

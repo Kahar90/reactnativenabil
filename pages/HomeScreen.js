@@ -5,40 +5,75 @@ import CardMainBig from '../src/components/CardMainBig';
 import TabChoose from '../src/components/TabChoose';
 import CardEvents from '../src/components/CardEvents';
 import Categories from '../src/components/Categories';
-import BottomNavigationBar from '../src/components/BottomNavigationBar';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-export default class HomeScreen extends Component {
-  render() {
-    return (
-      
-        <View style={styles.container}>
-          <ScrollView style={styles.container}>
-            {/* Header */}
-            <View style={styles.header}>
-              <Text style={styles.headertext}>Coming up next</Text>
-              {/* place holder for image */}
-              <Email width={20} height={20} fill={'#000'}></Email>
-            </View>
-            {/* Body */}
-            <View style={styles.body}>
-              <CardMainBig></CardMainBig>
-              <View style={styles.spacer}></View>
-              <TabChoose></TabChoose>
-              <Categories></Categories>
-              <CardEvents></CardEvents>
-              <CardEvents></CardEvents>
-              <CardEvents></CardEvents>
-              <CardEvents></CardEvents>
-              <CardEvents></CardEvents>
-              <View style={{paddingTop: 50}}></View>
-            </View>
+function HomeScreen(props) {
+  const Stack = createNativeStackNavigator();
+  return (
+    // <NavigationContainer independent="true">
+    //   <Stack.Navigator>
+    //     <Stack.Screen
+    //       name="Home"
+    //       options={{headerShown: false}}
+    //       children={
+    //         <View style={styles.container}>
+    //           <ScrollView style={styles.container}>
+    //             {/* Header */}
+    //             <View style={styles.header}>
+    //               <Text style={styles.headertext}>Coming up next</Text>
+    //               {/* place holder for image */}
+    //               <Email width={20} height={20} fill={'#000'}></Email>
+    //             </View>
+    //             {/* Body */}
+    //             <View style={styles.body}>
+    //               <CardMainBig></CardMainBig>
+    //               <View style={styles.spacer}></View>
+    //               <TabChoose></TabChoose>
+    //               <Categories></Categories>
+    //               <CardEvents></CardEvents>
+    //               <CardEvents></CardEvents>
+    //               <CardEvents></CardEvents>
+    //               <CardEvents></CardEvents>
+    //               <CardEvents></CardEvents>
+    //               <View style={{paddingTop: 50}}></View>
+    //             </View>
+    //           </ScrollView>
+    //         </View>
+    //       }
+    //       >
 
-          </ScrollView>
+    //       </Stack.Screen>
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+
+    <View style={styles.container}>
+      <ScrollView style={styles.container}>
+        {/* Header */}
+        <View style={styles.header}>
+          <Text style={styles.headertext}>Coming up next</Text>
+          {/* place holder for image */}
+          <Email width={20} height={20} fill={'#000'}></Email>
         </View>
-      
-    );
-  }
+        {/* Body */}
+        <View style={styles.body}>
+          <CardMainBig></CardMainBig>
+          <View style={styles.spacer}></View>
+          <TabChoose></TabChoose>
+          <Categories></Categories>
+          <CardEvents></CardEvents>
+          <CardEvents></CardEvents>
+          <CardEvents></CardEvents>
+          <CardEvents></CardEvents>
+          <CardEvents></CardEvents>
+          <View style={{paddingTop: 50}}></View>
+        </View>
+      </ScrollView>
+    </View>
+  );
 }
+
+export default HomeScreen;
 
 const styles = StyleSheet.create({
   container: {
