@@ -1,10 +1,10 @@
 import {Text, View, StyleSheet, Image} from 'react-native';
 import React, {Component} from 'react';
-import Football from '../svg/006-football.svg';
-import Masks from '../svg/008-masks.svg';
-import QA from '../svg/025-qa.svg';
-import Info from '../svg/045-info.svg';
-import Time from '../svg/001-calendar.svg';
+import Football from '../../assets/svg/006-football.svg';
+import Masks from '../../assets/svg/008-masks.svg';
+import QA from '../../assets/svg/025-qa.svg';
+import Info from '../../assets/svg/045-info.svg';
+import Time from '../../assets/svg/001-calendar.svg';
 
 function CardMainBig(props) {
   return (

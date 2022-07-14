@@ -1,7 +1,7 @@
 import {Text, View, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
-import Arrow from '../svg/056-forward.svg';
-import Recent from '../svg/067-sync.svg';
+import Arrow from '../../assets/svg/056-forward.svg';
+import Recent from '../../assets/svg/067-sync.svg';
 
 function Categories(props) {
   return (

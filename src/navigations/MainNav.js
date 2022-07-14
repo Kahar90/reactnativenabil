@@ -1,8 +1,9 @@
 import {SafeAreaView, StyleSheet} from 'react-native';
 import React from 'react';
-import LoginScreen from '../../pages/LoginScreen';
-import ForgotPassword from '../../pages/ForgotPasswordScreen';
-import HomePage from '../../pages/HomePage';
+
+import LoginScreen from '../screens/LoginScreen';
+import ForgotPassword from '../screens/ForgotPasswordScreen';
+import HomePage from '../screens/HomePage';
 import { NavigationContainer } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 

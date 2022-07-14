@@ -1,7 +1,7 @@
 import {Text, TextInput, View, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
-import Email from '../svg/033-email.svg';
-import Password from '../svg/042-unlock.svg';
+import Email from '../../assets/svg/033-email.svg';
+import Password from '../../assets/svg/042-unlock.svg';
 
 function TextField(props) {
   return (

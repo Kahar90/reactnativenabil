@@ -1,8 +1,9 @@
 import {Text, View, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
-import Football from '../svg/006-football.svg';
-import Arrow from '../svg/056-forward.svg';
-import Time from '../svg/058-null.svg';
+
+import Football from '../../assets/svg/006-football.svg';
+import Arrow from '../../assets/svg/056-forward.svg';
+import Time from '../../assets/svg/058-null.svg';
 
 function CardEvents(props) {
   return (

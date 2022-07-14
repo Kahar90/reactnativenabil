@@ -6,9 +6,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React, {Component} from 'react';
-import ButtonBigYellow from '../src/components/ButtonBigYellow';
-import TextField from '../src/components/TextField';
-import LogoThin from '../src/svg/react-logo-svgrepo-com.svg';
+import ButtonBigYellow from '../components/ButtonBigYellow';
+import TextField from '../components/TextField';
+import LogoThin from '../../assets/svg/react-logo-svgrepo-com.svg';
 
 function LoginScreen(props) {
   return (

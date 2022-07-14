@@ -1,6 +1,6 @@
 import {Text, View} from 'react-native';
 import React, {Component} from 'react';
-import BottomNavigationBar from '../src/components/BottomNavigationBar';
+import BottomNavigationBar from '../components/BottomNavigationBar';
 
 function HomePage(props) {
   return <BottomNavigationBar></BottomNavigationBar>;

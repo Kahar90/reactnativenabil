@@ -2,12 +2,11 @@ import {Text, View, StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React, {Component, useState} from 'react';
-import HomeScreen from '../../pages/HomeScreen';
-import Football from '../svg/006-football.svg';
-import Info from '../svg/045-info.svg';
-import Time from '../svg/001-calendar.svg';
-import Page2 from '../../pages/Page2';
-import Page3 from '../../pages/Page3';
+
+import Football from '../../assets/svg/006-football.svg';
+import Info from '../../assets/svg/045-info.svg';
+import Time from '../../assets/svg/001-calendar.svg';
+
 import HomeStackScreen from './HomeStackScreen';
 import Page2StackScreen from './Page2StackScreen';
 import Page3StackScreen from './Page3StackScreen';
@@ -50,7 +49,7 @@ function BottomNav(props) {
                   marginTop: 5,
                   marginBottom: 5,
                 }}>
-                  {selectedIndex === 0 ? <View style={styles.bar}></View> : null}
+                {selectedIndex === 0 ? <View style={styles.bar}></View> : null}
                 <Football
                   width={30}
                   height={30}
@@ -78,7 +77,7 @@ function BottomNav(props) {
                   marginTop: 5,
                   marginBottom: 5,
                 }}>
-                  {selectedIndex === 1 ? <View style={styles.bar}></View> : null}
+                {selectedIndex === 1 ? <View style={styles.bar}></View> : null}
                 <Info
                   width={30}
                   height={30}
@@ -158,18 +157,5 @@ const styles = StyleSheet.create({
     // borderRadius: 5,
     borderWidth: 1,
     borderColor: '#fff',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });
-
-// style={{
-// width: 30,
-// height: 30,
-// backgroundColor: '#090909',
-// borderRadius: 15,
-// justifyContent: 'center',
-// alignItems: 'center',
-// marginTop: 5,
-// marginBottom: 5,
-// }}>

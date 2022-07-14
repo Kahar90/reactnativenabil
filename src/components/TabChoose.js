@@ -1,7 +1,7 @@
 import {Text, View, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
-import Football from '../svg/006-football.svg';
-import Camera from '../svg/036-camera.svg';
+import Football from '../../assets/svg/006-football.svg';
+import Camera from '../../assets/svg/036-camera.svg';
 
 function TabChoose(props) {
   return (

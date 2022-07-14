@@ -1,6 +1,6 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React, {Component, useState} from 'react';
-import Page3 from '../../pages/Page3';
+import Page3 from '../screens/Page3';
 
 function Page3StackScreen(props) {
     const HomeStack = createNativeStackNavigator();

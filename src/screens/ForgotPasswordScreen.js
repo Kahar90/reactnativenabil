@@ -1,8 +1,8 @@
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import React, {Component} from 'react';
-import TextField from '../src/components/TextField';
-import ButtonBigYellow from '../src/components/ButtonBigYellow';
-import LogoWide from '../src/svg/netflix-2-logo-svgrepo-com.svg';
+import TextField from '../components/TextField';
+import ButtonBigYellow from '../components/ButtonBigYellow';
+import LogoWide from '../../assets/svg/netflix-2-logo-svgrepo-com.svg';
 
 function ForgotPassword(props) {
   return (

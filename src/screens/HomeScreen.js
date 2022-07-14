@@ -1,10 +1,10 @@
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
 import React, {Component} from 'react';
-import Email from '../src/svg/033-email.svg';
-import CardMainBig from '../src/components/CardMainBig';
-import TabChoose from '../src/components/TabChoose';
-import CardEvents from '../src/components/CardEvents';
-import Categories from '../src/components/Categories';
+import Email from '../../assets/svg/033-email.svg';
+import CardMainBig from '../components/CardMainBig';
+import TabChoose from '../components/TabChoose';
+import CardEvents from '../components/CardEvents';
+import Categories from '../components/Categories';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
